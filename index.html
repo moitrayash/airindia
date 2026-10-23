@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Yash Moitra</title>
-<meta name="description" content="Yash Moitra — personal website." />
+<title>Perspectives</title>
+<meta name="description" content="Perspectives" />
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { font-size: 16px; }
@@ -73,6 +73,9 @@ position: relative;
 content: ' ↗';
 font-size: 0.75em;
 opacity: 0.5;
+}
+.links a.internal::after {
+content: none;
 }
 .links a:hover {
 color: #888;
@@ -164,26 +167,16 @@ max-width: calc(100vw - 60px);
 <body>
 <div class="layout">
 <div class="intro">
-<h1>Yash Moitra</h1>
-<p>I&rsquo;m Yash, and this is my personal website; my poetry, musings, and other work live here until they should find more permanent homes.</p>
-<p>In a way, this is art for art&rsquo;s sake. You may make as much of it.</p>
+<h1>Perspectives</h1>
+<p>For the Board of Air India Limited</p>
 </div>
 <div class="divider"></div>
 <nav class="links">
-<a href="https://oeuvre.yashmoitra.com" target="_blank" rel="noopener noreferrer" data-tip="Writings on my wall">Oeuvre</a>
-<a href="/archive/" target="_blank" rel="noopener noreferrer" data-tip="For the sake of memory and all (else) that lives">Archive</a>
-<a href="https://sovereignratings.yashmoitra.com" target="_blank" rel="noopener noreferrer" data-tip="Relativistic analysis of national scoring methods">Sovereign Ratings Project</a>
-<details class="group">
-<summary>Feathervane</summary>
-<div class="sublinks">
-<a href="https://vidp.yashmoitra.com" target="_blank" rel="noopener noreferrer" data-tip="Live METARs and active NOTAMs for Delhi">VIDP/DEL</a>
-<a href="https://vobl.yashmoitra.com" target="_blank" rel="noopener noreferrer" data-tip="Live METARs and active NOTAMs for Bengaluru">VOBL/BLR</a>
-<a href="https://vanp.yashmoitra.com" target="_blank" rel="noopener noreferrer" data-tip="Live METARs and active NOTAMs for Nagpur">VANP/NAG</a>
-<a href="https://vohs.yashmoitra.com" target="_blank" rel="noopener noreferrer" data-tip="Live METARs and active NOTAMs for Hyderabad">VOHS/HYD</a>
-<a href="https://voga.yashmoitra.com" target="_blank" rel="noopener noreferrer" data-tip="Live METARs and active NOTAMs for Goa">VOGA/GOX</a>
-</div>
-</details>
-<a href="https://fixthis.yashmoitra.com" target="_blank" rel="noopener noreferrer" data-tip="[Demo] Portal for city/municipal governments to receive infrastructure complaints and grievances">Fix This</a>
+<a class="internal" href="#">Place1</a>
+<a class="internal" href="#">Place2</a>
+<a class="internal" href="#">Place3</a>
+<a class="internal" href="#">Place4</a>
+<a class="internal" href="appendices/">Appendices</a>
 </nav>
 </div>
 </body>
