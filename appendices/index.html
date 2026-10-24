@@ -87,7 +87,7 @@ content: none;
 .links a:hover {
 color: #888;
 }
-.links a:hover::before {
+.links a[data-tip]:hover::before {
 content: attr(data-tip);
 position: absolute;
 bottom: calc(100% + 8px);
@@ -165,7 +165,7 @@ width: 100%;
 height: 1px;
 align-self: stretch;
 }
-.links a:hover::before {
+.links a[data-tip]:hover::before {
 max-width: calc(100vw - 60px);
 }
 }
@@ -179,7 +179,7 @@ max-width: calc(100vw - 60px);
 </div>
 <div class="divider"></div>
 <nav class="links">
-<a class="internal" href="april-2025-letter-to-board.html">Letter to Board (April 2025)</a>
+<a class="internal" href="april-2025-letter-to-board.html" data-tip="CMX slots, 77W Siberia airspace, NMIA P2P Domestic, COMAC, W LFs short-haul, Chengdu, Maharaja arbitrage.">Letter to Board (April 2025)</a>
 <a class="internal" href="may-2025-letter-to-board.html">Letter to Board (May 2025)</a>
 </nav>
 </div>
