@@ -61,28 +61,31 @@ border-top: 1px solid #ccc;
 }
 .item-meta { font-size: 14px; color: #666; margin-bottom: 8px; }
 .item-page-nav {
-display: flex;
-justify-content: space-between;
+display: grid;
+grid-template-columns: 1fr auto 1fr;
+gap: 24px;
 align-items: center;
-text-align: center;
 margin: 80px 0 40px;
 padding: 40px 0;
 border-top: 1px solid #ccc;
 }
 .item-page-nav a { font-size: 16px; text-decoration: none; color: #000; }
 .item-page-nav a:hover { text-decoration: underline; }
-.nav-placeholder { width: 80px; display: inline-block; }
+.item-page-nav > :first-child { justify-self: start; text-align: left; }
+.item-page-nav > :nth-child(2) { justify-self: center; text-align: center; }
+.item-page-nav > :last-child { justify-self: end; text-align: right; }
 @media (max-width: 600px) {
 .item-title { font-size: 32px; }
-.item-page-nav { flex-direction: column; gap: 22px; margin: 60px 0 20px; }
+.item-page-nav { grid-template-columns: 1fr; gap: 22px; margin: 60px 0 20px; }
+.item-page-nav > * { justify-self: center !important; text-align: center !important; }
 .item-page-nav > * { width: 100%; }
-.item-page-nav .nav-placeholder { display: none; }
+.item-page-nav span:empty { display: none; }
 }
 </style>
 </head>
 <body>
 <div class="item-page">
-<a href="./" class="back-link">Back to Appendices</a>
+<a href="./" class="back-link">Return to Appendices</a>
 <h2 class="item-title">Letter to Board</h2>
 <a href="may-2025-letter-to-board.pdf" class="download-link" target="_blank" rel="noopener">Download PDF</a>
 <div class="item-content">
@@ -112,9 +115,9 @@ border-top: 1px solid #ccc;
 <p class="signoff">Warm Regards,<br /><br />Yash Moitra<br />Ratan N. Tata Scholar<br /><br />Cornell University, Ithaca, NY<br />+1 (607) 327-7305 | <a href="mailto:ym522@cornell.edu">ym522@cornell.edu</a></p>
 </div>
 <nav class="item-page-nav" aria-label="Letter navigation">
-<a href="board-apr25">&lt; Letter to Board (April 2025)</a>
-<a href="./" class="back-link" style="margin-bottom:0">Back to Appendices</a>
-<span class="nav-placeholder"></span>
+<a href="board-apr25">Letter to Board (April 2025)</a>
+<a href="./" class="back-link" style="margin-bottom:0">Return to Appendices</a>
+<span></span>
 </nav>
 </div>
 </body>
