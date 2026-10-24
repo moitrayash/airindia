@@ -80,7 +80,7 @@ content: none;
 .links a:hover {
 color: #888;
 }
-.links a:hover::before {
+.links a[data-tip]:hover::before {
 content: attr(data-tip);
 position: absolute;
 bottom: calc(100% + 8px);
@@ -158,7 +158,7 @@ width: 100%;
 height: 1px;
 align-self: stretch;
 }
-.links a:hover::before {
+.links a[data-tip]:hover::before {
 max-width: calc(100vw - 60px);
 }
 }
@@ -176,7 +176,7 @@ max-width: calc(100vw - 60px);
 <a class="internal" href="#">Place2</a>
 <a class="internal" href="#">Place3</a>
 <a class="internal" href="#">Place4</a>
-<a class="internal" href="appendices/">Appendices</a>
+<a class="internal" href="appendices/" data-tip="Specific miscellanies">Appendices</a>
 </nav>
 </div>
 </body>
